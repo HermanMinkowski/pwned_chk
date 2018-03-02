@@ -12,4 +12,4 @@ python pwned_chk.py -p <password>
 python pwned_chk.py -i <input_password_file> [-o <output_password_file>]
 ```
 
-![color_output](https://github.com/HermanMinkowski/pwned_chk/screenshots/color_output.png)
+![color_output](https://github.com/HermanMinkowski/pwned_chk/blob/master/screenshots/color_output.png)
