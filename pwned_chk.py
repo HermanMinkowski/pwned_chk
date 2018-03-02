@@ -99,7 +99,8 @@ def main(argv):
     single_password = ""
     color = False
     try:
-        options, args = getopt.getopt(argv, "hcp:i:o:", ["input=", "output="])
+        options, args = getopt.getopt(argv, "hcp:i:o:", ["help", "input=",
+                                      "output=", "color", "password="])
     except getopt.GetoptError:
         usage()
         sys.exit(2)
@@ -108,9 +109,9 @@ def main(argv):
         if option in ("-h", "--help"):
             usage()
             sys.exit()
-        elif option in ("-i", "--ifile"):
+        elif option in ("-i", "--input"):
             input_file = arg
-        elif option in ("-o", "--ofile"):
+        elif option in ("-o", "--output"):
             output_file = arg
         elif option in ("-c", "--color"):
             color = True
