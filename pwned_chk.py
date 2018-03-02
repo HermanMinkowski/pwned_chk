@@ -3,10 +3,10 @@
 Check if passwords in a file are compromised according to pwnedpasswords.com
 """
 
-import requests
 import hashlib
 import sys
 import getopt
+import requests
 from colorama import init, Fore, Back, Style
 init()
 
